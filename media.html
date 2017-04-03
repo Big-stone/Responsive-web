@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .container{
+            margin: 0 auto;
+           width: 1200px;
+           height: 800px;
+           /*background-color: pink; */
+             }
+             /*宽屏设备(大屏设备) 1200px以上*/
+        @media screen and (min-width:1200px){
+            .container{
+                background-color: pink;
+            }
+        }
+        /*中等屏幕(小屏pc)*/
+        @media screen and (min-width:992px) and (max-width:1200px){
+            .container{
+                background-color: green;
+                width: 980px;
+            }
+        }
+        /*小屏设备(pad)*/
+        @media screen and (min-width:768px) and (max-width:992px){
+            .container{
+                background-color: orange;
+                width: 768px;
+            }
+        }
+        /*超小屏幕(移动设备) 768px以下*/
+        @media screen and (max-width:768px){
+            .container{
+                background-color: #000;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+  <!--超小屏幕(移动设备) 768px以下
+  小屏设备(pad) 768px-992px
+  中等屏幕(小屏pc) 992px-1200px
+  宽屏设备(大屏设备) 1200px以上-->
+    <div class="container">
+
+    </div>
+
+</body>
+</html>
