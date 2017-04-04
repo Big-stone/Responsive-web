@@ -223,3 +223,29 @@ body{
 .wjs-info .media-left span{
     font-size: 30px;
 }
+
+/*在中等和大屏 信息模块的版心宽度为910px*/
+@media screen and (min-width:992px){
+    .wjs-info .container{
+        width: 910px;
+    }
+    .wjs-book .container{
+        width: 910px;
+    }
+}
+/*预约模块*/
+.wjs-book{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 30px 0;
+}
+.wjs-book .book-link{
+    color: red;
+    border-bottom: 1px dashed red;
+}
+.wjs-book span[class^='icon-']{
+    font-size: 30px;
+}
+.wjs-book .pull-right a:hover{
+    color: red;
+}
