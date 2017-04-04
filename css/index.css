@@ -6,6 +6,9 @@ a:hover{
     color: #333;
     text-decoration: none;
 }
+body{
+      font-family: 'Microsoft Yahei'
+}
 /*头部*/
 .wjs-header{
     height: 40px;
@@ -52,6 +55,72 @@ a:hover{
   content:"\e93e";
 }
 
+.icon-E903::before{
+  content: "\e903";
+}
+.icon-E906::before{
+  content: "\e906";
+}
+.icon-E905::before{
+  content: "\e905";
+}
+.icon-E907::before{
+  content: "\e907";
+}
+.icon-E901::before{
+  content: "\e901";
+}
+.icon-E900::before{
+  content: "\e900";
+}
+.icon-E904::before{
+  content: "\e904";
+}
+.icon-E902::before{
+  content: "\e902";
+}
+.icon-E906::before{
+  content: "\e906";
+}
+.icon-new01::before{
+  content: "\e90e";
+}
+.icon-new02::before{
+  content: "\e90f";
+}
+.icon-new03::before{
+  content: "\e910";
+}
+.icon-new04::before{
+  content: "\e911";
+}
+.icon-partner01::before{
+  content:"\e946";
+}
+.icon-partner02::before{
+  content: "\e92f";
+}
+.icon-partner03::before{
+  content: "\e92e";
+}
+.icon-partner04::before{
+  content: "\e92a";
+}
+.icon-partner05::before{
+  content: "\e929";
+}
+.icon-partner06::before{
+  content: "\e931";
+}
+.icon-partner07::before{
+  content: "\e92c";
+}
+.icon-partner08::before{
+  content: "\e92b";
+}
+.icon-partner09::before{
+  content: "\e92d";
+}
 /*导航样式*/
 .wjs-navbar {
   background-color: #fff;
@@ -75,7 +144,6 @@ a:hover{
   color: #777;
   height: 80px;
   line-height: 50px;
-  font-family: 'Microsoft Yahei'
 }
 .wjs-navbar .navbar-nav > li > a:hover,
 .wjs-navbar .navbar-nav > li > a:focus {
@@ -136,4 +204,22 @@ a:hover{
 }
 .wjs-banner .m-img{
     width: 100%;
+}
+
+/*信息模块*/
+
+.wjs-info{
+    padding: 25px 0;
+}
+
+.wjs-info .row>div{
+    margin: 10px auto;
+}
+
+.wjs-info .row>div a:hover{
+    color: red;
+}
+
+.wjs-info .media-left span{
+    font-size: 30px;
 }
