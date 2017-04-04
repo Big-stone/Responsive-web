@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+
+<script>
+        // e.changeTouches[0]最后一次改变的数据
+        // e.targetTouches[0]目标元素上的触屏数据
+        // e.touches[0]记录屏幕上所有的触屏数据
+    var box = document.querySelector('.box');
+
+    //定义变量存储触屏的数据
+    // 开始触屏数据
+    var startX = 0;
+    //触屏移动数据
+    var moveX = 0;
+    // 距离差
+    var distanceX = 0;
+    // 绑定触屏事件
+    box.addEventListener('touchstart',function(e){
+        // 记录触屏开始的数据
+        console.log('触屏开始');
+        startX = e.targetTouches[0].clientX;
+        
+    })
+
+    box.addEventListener('touchmove',function(e){
+        console.log('触屏移动中');
+        
+        moveX = e.targetTouches[0].clientX;
+
+        // 计算距离差
+        distanceX = moveX-startX;
+
+    })
+
+    box.addEventListener('touchend',function(e){
+        console.log('触屏结束了');
+
+        //判断,如果距离差大于0则表示向右滑动,如果小于0则向左滑动
+        if(distanceX > 0) {
+            console.log('向右滑动');
+        }
+        if(distanceX < 0 ) {
+            console.log('向左滑动');
+        }
+        
+        // 判断结束后重置数据
+        startX = 0;
+        moveX = 0;
+        distanceX = 0;
+    })
+</script>
+
+</body>
+</html>

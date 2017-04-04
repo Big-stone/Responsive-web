@@ -82,10 +82,61 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<!--轮播图部分-->
+<div class="wjs-banner">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- 小圆点 -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+  </ol>
+
+  <!-- 轮播图 -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+        <!--在超小屏幕下隐藏-->
+      <div class="pc-img hidden-xs" style="background-image: url(images/slide_01_2000x410.jpg)"></div>
+      <!--在大中小屏幕下隐藏-->
+      <img class="m-img hidden-lg hidden-md hidden-sm" src="images/slide_01_640x340.jpg" alt="...">
+    </div>
+
+    <div class="item">
+      <div class="pc-img hidden-xs" style="background-image: url(images/slide_02_2000x410.jpg)"></div>
+      <img class="m-img hidden-lg hidden-md hidden-sm" src="images/slide_02_640x340.jpg" alt="...">
+    </div>
+
+    <div class="item">
+      <div class="pc-img hidden-xs" style="background-image: url(images/slide_03_2000x410.jpg)"></div>
+      <img class="m-img hidden-lg hidden-md hidden-sm" src="images/slide_03_640x340.jpg" alt="...">
+    </div>
+
+    <div class="item">
+      <div class="pc-img hidden-xs" style="background-image: url(images/slide_04_2000x410.jpg)"></div>
+      <img class="m-img hidden-lg hidden-md hidden-sm" src="images/slide_04_640x340.jpg" alt="...">
+    </div>
+                
+  </div>
+
+  <!-- 左右控制图标 -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
 
     <!-- jQuery 文件引入 (务必在bootstrap.js文件引入之前) -->
     <script src="./lib/jquery/jquery.min.js"></script>
     <!-- 引入bootstrap核心js文件 -->
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <!--自己的js文件-->
+    <script src="./js/index.js"></script>
+
   </body>
 </html>

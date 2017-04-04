@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    <script>
+        // e.changeTouches[0]最后一次改变的数据
+        // e.targetTouches[0]目标元素上的触屏数据
+        // e.touches[0]记录屏幕上所有的触屏数据
+        var box = document.querySelector('.box');
+
+        // 触屏时触发
+        box.addEventListener('touchstart',function(e){
+            console.log('触屏开始')
+            console.log(e);
+        })
+        // 触屏移动时触发
+        box.addEventListener('touchmove',function(e){
+            console.log('触屏移动中')
+            // console.log(e);
+        })
+        // 触屏结束时触发
+        box.addEventListener('touchend',function(e){
+            console.log('触屏结束')
+            // console.log(e);
+        })
+    </script>
+</body>
+</html>
