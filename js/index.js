@@ -2,6 +2,10 @@ window.onload = function(){
 
     //触屏轮播图
     banner();
+
+    // 初始化提示工具
+    $('.bao').tooltip();
+    $('.bei').tooltip();
 }
 
 // 轮播图方法封装
