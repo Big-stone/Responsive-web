@@ -249,3 +249,35 @@ body{
 .wjs-book .pull-right a:hover{
     color: red;
 }
+
+/*产品模块*/
+
+.wjs-product{
+    padding: 30px 0;
+    border-bottom: 1px solid #ccc;
+    background-color: #eee;
+}
+
+/*产品模块 tab头部*/
+
+.product-tabs {
+  border-bottom: 1px solid #ddd;
+}
+.product-tabs > li {
+  float: left;
+}
+.product-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border-bottom: 3px solid transparent;
+}
+.product-tabs > li > a:hover {
+  border-color: red;
+}
+.product-tabs > li.active > a,
+.product-tabs > li.active > a:hover,
+.product-tabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  border-bottom: 3px solid red;
+}
