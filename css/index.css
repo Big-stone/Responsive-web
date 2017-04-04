@@ -1,0 +1,130 @@
+/*css重置*/
+a{
+    color: #333;
+}
+a:hover{
+    color: #333;
+    text-decoration: none;
+}
+/*头部*/
+.wjs-header{
+    height: 40px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+}
+.wjs-header .row>div{
+    height: 40px;
+    border-left: 1px solid #ccc;
+}
+.wjs-header .row>div:nth-child(1){
+    border: none;
+}
+
+/*声明图标字体*/
+@font-face {
+  font-family: wjsfont;
+  src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'),
+  url('../font/MiFie-Web-Font.svg') format('svg'),
+  url('../font/MiFie-Web-Font.ttf') format('truetype'),
+  url('../font/MiFie-Web-Font.woff') format('woff');
+}
+
+/*定义类名 在伪元素中 定义字体*/
+[class^='icon-']{
+    font-family: wjsfont;
+}
+
+.icon-phone::before{
+  content:"\e908";
+}
+
+.icon-tel::before{
+  content:"\e909";
+}
+
+.icon-logo::before{
+  content:"\e920";
+}
+
+.icon-text::before{
+  content:"\e93e";
+}
+
+/*导航样式*/
+.wjs-navbar {
+  background-color: #fff;
+  border-color: #e7e7e7;
+}
+.wjs-navbar .navbar-brand {
+  color: #777;
+  height: 80px;
+  line-height: 50px;
+}
+.wjs-navbar .navbar-brand:hover,
+.wjs-navbar .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.wjs-navbar .navbar-text {
+  color: #777;
+}
+.wjs-navbar .navbar-nav > li > a {
+  color: #777;
+  height: 80px;
+  line-height: 50px;
+  font-family: 'Microsoft Yahei'
+}
+.wjs-navbar .navbar-nav > li > a:hover,
+.wjs-navbar .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+  border-bottom: 3px solid red;
+}
+.wjs-navbar .navbar-nav > .active > a,
+.wjs-navbar .navbar-nav > .active > a:hover,
+.wjs-navbar .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+.wjs-navbar .navbar-nav > .disabled > a,
+.wjs-navbar .navbar-nav > .disabled > a:hover,
+.wjs-navbar .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.wjs-navbar .navbar-toggle {
+  border-color: #ddd;
+  margin-top: 22px;
+}
+.wjs-navbar .navbar-toggle:hover,
+.wjs-navbar .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.wjs-navbar .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.wjs-navbar .navbar-collapse,
+.wjs-navbar .navbar-form {
+  border-color: #e7e7e7;
+}
+.wjs-navbar .navbar-nav > .open > a,
+.wjs-navbar .navbar-nav > .open > a:hover,
+.wjs-navbar .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+/*导航logo样式*/
+.navbar-brand .icon-logo{
+    font-size: 50px;
+    color: red;
+    /*文字中线对齐*/
+    vertical-align: middle;
+}
+.navbar-brand .icon-text{
+    font-size: 30px;
+    color: #000;
+        /*文字中线对齐*/
+    vertical-align: middle;
+}
