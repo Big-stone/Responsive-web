@@ -3,6 +3,9 @@ window.onload = function(){
     //触屏轮播图
     banner();
 
+    // 设置产品模块tab导航宽度
+    setWidth();
+
     // 初始化提示工具
     $('.bao').tooltip();
     $('.bei').tooltip();
@@ -56,4 +59,16 @@ function banner(){
       distanceX=0;
 
     })
+}
+
+//设置产品模块tab导航宽度
+function setWidth(){
+    //获取product-tabs里边所有li的累加宽度 把总和赋值给product-tabs
+    var w = 0;//累加li的宽度
+    $('.product-tabs li').each(function(index,e){
+        w+=$(e).outerWidth(true);
+    });
+    //把总和赋值给product-tabs
+    $('.product-tabs').width(w);
+
 }

@@ -282,6 +282,11 @@ body{
   border-bottom: 3px solid red;
 }
 
+.wjs-product .nav-header{
+  /*控制水平方向的溢出*/
+  overflow-x: scroll;
+}
+
 /*产品主体部分*/
 .wjs-product .tab-content .row>div{
     height: 170px;
@@ -303,7 +308,25 @@ body{
     text-align: center;
     position: relative;
 }
-
+.wjs-product .tab-content .product-in.current{
+  background-color: red;
+  color: #fff;
+}
+.wjs-product .product-in.current  .product-right{
+   border-color: #fff;
+}
+.product-in.current  .product-right p:nth-child(1){
+  color:#fff;
+}
+.wjs-product .product-in.current .product-left::before{
+  position: absolute;
+  left:15px;
+  top:11px;
+  content:"\e915";
+  font-family: wjsfont;
+  color:#fff;
+  font-size: 40px;
+}
 .wjs-product  .product-right::before,
 .wjs-product  .product-right::after{
     position: absolute;
@@ -380,4 +403,7 @@ body{
     left: auto;
     color: red;
     border: 1px solid red;
+}
+.wjs-product .product-left .progress{
+   height: 10px;
 }
