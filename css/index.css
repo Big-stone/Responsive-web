@@ -6,6 +6,9 @@ a:hover{
     color: #333;
     text-decoration: none;
 }
+ul,ol{
+  list-style:none;
+}
 body{
       font-family: 'Microsoft Yahei'
 }
@@ -406,4 +409,101 @@ body{
 }
 .wjs-product .product-left .progress{
    height: 10px;
+}
+
+/*新闻模块*/
+.wjs-news{
+  padding: 25px 0;
+}
+
+.wjs-news h4{
+  text-align: center; 
+  border-bottom: 1px solid #ccc;
+  line-height: 40px;
+  position: relative;
+}
+
+.wjs-news h4::after{
+  content: "";
+  position: absolute;
+  right: -6px;
+  bottom: -3px;
+  width: 6px;
+  height: 6px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+/*新闻导航*/
+
+.news-tabs {
+
+}
+.news-tabs > li {
+  float: left;
+  margin-bottom:60px;
+}
+
+.news-tabs > li:last-child{
+  margin-bottom:0;
+}
+.news-tabs > li > a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  border-radius: 50%;
+  color:red;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+}
+.news-tabs > li > a:hover {
+  background-color: red;
+  color:#fff;
+}
+.news-tabs > li.active > a,
+.news-tabs > li.active > a:hover,
+.news-tabs > li.active > a:focus {
+  background-color: red;
+  color:#fff;
+}
+/*竖线*/
+.wjs-news .row>div{
+  position: relative;
+}
+
+.wjs-news .line{
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  border-left: 1px dashed #ccc;
+  top: 0;
+  left: 45px;
+}
+/*新闻内容模块*/
+.wjs-news .tab-content ul li{
+  font-size: 16px;
+  line-height: 45px;
+}
+.wjs-news .tab-content  li a:hover{
+  color:red;
+}
+
+/*当屏幕宽度小于992时单独设置样式*/
+@media screen and (max-width:992px){
+
+  .news-tabs > li {
+    margin-bottom: 0;
+    width: 25%;
+    margin: 0 auto;
+  }
+    .news-tabs > li a{
+    margin: 0 auto;
+  }
+
+  .wjs-news .tab-content ul li{
+    height: 45px;
+    overflow: hidden;
+  }
 }
